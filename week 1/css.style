@@ -1,0 +1,8 @@
+body{
+    font-family: Arial, helvetica, sans-serif;
+    font-size:15px
+    line-height:1.5;
+    font: 15px/1.5 Arial, helvetica. sans-serif;
+    padding:0;
+    background-image: url("jimi-hendrix-at-woodstock");
+    background-color:#f4f4f4;
