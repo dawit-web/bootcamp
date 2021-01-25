@@ -1,5 +1,7 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 
 {
@@ -12,7 +14,7 @@
 
 
 li, a, button {
-	font-family: "Montserrat" ,sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font size: 16px;
 	color: #ecf0f1;
