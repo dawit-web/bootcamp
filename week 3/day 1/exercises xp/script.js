@@ -1,7 +1,8 @@
 
 ///1 
 let div = document.getElementById('navBar');
- console .log div.setAttribute('id', 'socialNetworkNavigation');
+div.setAttribute('id', 'socialNetworkNavigation');
+console.log(div);
 
 let newLi = document.createElement('li');
 let newa = document.createElement('a');
