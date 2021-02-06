@@ -25,20 +25,33 @@ if (bad > not) {
 let x = 5
 let y = 2
 
+if (x>y) {
 
-//2
-{
-let newdog = 'chihuahua'
-let number = 'newdog'
-console.log (6)
+console.log('x is the bigest number')
+
 }
+
+else  {
+
+    console.log(' no is the small number')   
+}
+
+////2
+
+let newdog = 'chihuahua'
+let strnumber = 'newdDOG'
+console.log (strnumber)
+
  
  if ('newdog = chihuahua') { 
  	console. log ('I love Chihuahua, it’s my favorite dog breed')
-
- else 
+ }
+ else { 
 	console.log ('I dont care, I prefer cats') 
+ }
 
+ //4
 
-	
-}
+ let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
+
+ console.log (number indexOf)

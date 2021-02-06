@@ -25,47 +25,18 @@
 
 // //4
 
-//  let bankAmount = 0
-//  let vat = 0.17
-//  let details = ["+200", "-100", "+146", "+167", "-2900"]
-//  details.forEach(element => {
-//     bankAmount+=parseInt(element)*(vat+1) 
-//  });
-//    console.log(bankAmount)
-   
+  // let bankAmount = 0
+  // let vat = 0.17
+  // let details = ["+200", "-100", "+146", "+167", "-2900"]
+  // details.forEach(element => {
+  //  bankAmount+=parseInt(element)*(vat+1) 
+  // });
+  //   console.log(bankAmount)
+ 
 
-  let gameInfo = [
-    {
-      username: "john",
-      team: "red",
-      score: 5,
-      items: ["ball", "book", "pen"]
-    },
-    {
-      username: "becky",
-      team: "blue",
-      score: 10,
-      items: ["tape", "backpack", "pen"]
-    },
-    {
-      username: "susy",
-      team: "red",
-      score: 55,
-      items: ["ball", "eraser", "pen"]
-    },
-    {
-      username: "tyson",
-      team: "green",
-      score: 1,
-      items: ["book", "pen"]
-    },
-   ];
-   
-      gameInfo.forEach(element => {
-      arr.push(element.username+"!")
-      pushcors>
 
-    };
-      
-   
-     
+let names = ['david', 'moshe' ,'bobi']
+{ 
+ map(id => i < users);
+ console.log(names)‏
+}

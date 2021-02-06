@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>the robot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+         body{
+            background-color: blueviolet;
+        }
+         #root{ 
+           display: flex;
+           flex-wrap: wrap;
+         }
+    </style>
+    
+    <div class="robots"></div>
+    <nav class="navbar">
+        <div class="brand-title">robot freinds</div>
+        <div id="search-container"></div>
+     
+        <input type="text" id="myinput" onkeyup="filterSearch()" placeholder="Search for names.."/>
+</nav>
+<div id = "root" ></div>
+<script src="script.js"></script>
+</body>
+</html>
