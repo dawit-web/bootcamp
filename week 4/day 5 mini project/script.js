@@ -74,7 +74,7 @@ const robots = [
 
    function Details (id) {
     let div = document.getElementById("root");
-     
+     div.innerHTML= ""
     id.forEach(i => {
         let { id , name ,username ,email ,image } = i
         console.log (id,username,name,image,email);
@@ -107,13 +107,12 @@ const robots = [
     
 
     
-    
        function filterSearch(){
         let input = document.getElementById('myinput').value;
-        const filter = array.robots(item=>{
+        const filter = robots.filter(item=>{
         return item.name.toLowerCase().includes(input.toLowerCase())
       });
-      createRobot(filter)
+      Details(filter)
       }
 
 
