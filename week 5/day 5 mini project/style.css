@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+ body{
+   background-image:url("https://cdn.statically.io/img/i.pinimg.com/originals/4b/48/b3/4b48b38a275415e33f4b52c74307ce4d.jpg");
+   color:#ffffff;
+
+}
+
+.Star  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+      
+.button{
+           display: block;
+           margin: 0 auto;
+           font-size: 20px;
+           border-radius: 6px;
+           
+
+       }
