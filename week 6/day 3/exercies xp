@@ -1,0 +1,87 @@
+
+day 3///
+
+--1
+SELECT language_id
+FROM film
+
+--2
+select film.title , film.description , language.name
+from language
+inner join film
+	on film.language_id = language.language_id
+--3
+CREATE TABLE new_film(
+    film_id SERIAL PRIMARY KEY,
+    name VARCHAR (100) NOT NULL
+    );
+
+ INSERT INTO new_film (id, name )
+VALUES (1,'avodim'),(2,'jango'),(3,'gogo');
+
+4
+CREATE TABLE customer_review 
+(
+	review_id SERIAL NOT NULL,
+	film_id INT NOT NULL,
+    language_id INT,
+    title VARCHAR(255),
+    score INT,
+    review_text text,
+    last_update TIMESTAMP,
+    PRIMARY KEY (review_id),
+    CONSTRAINT fk_film_id
+    FOREIGN KEY (film_id)
+        REFERENCES new_film (film_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY (language_id)
+        REFERENCES language (language_id)
+);
+
+--5
+INSERT INTO customer_review 
+    (
+        film_id,
+        language_id,
+        title,
+        score,
+        review_text,
+        last_update
+    )
+VALUES 	
+	(1, 3, 'One', 2, 'Very bad film', NOW()),
+	(2, 2, 'Two', 8, 'Not bad film', NOW()),
+    (3, 4, 'Three', 10, 'Very good film', NOW())
+RETURNING *;
+
+--6
+DELETE FROM new_film
+WHERE film_id = 3;
+
+
+--Exercise 2
+
+--1
+UPDATE film
+SET language_id = 3
+WHERE film_id > 50 AND film_id < 100
+RETURNING *;
+
+--3
+DROP TABLE customer_review;
+
+--4
+SELECT * 
+FROM rental
+WHERE return_date IS NULL
+
+--5
+SELECT title, replacement_cost
+FROM rental
+INNER JOIN inventory
+ON inventory.inventory_id = rental.inventory_id
+INNER JOIN film
+ON film.film_id = inventory.film_id
+WHERE return_date IS NULL
+ORDER BY replacement_cost DESC
+LIMIT 30;

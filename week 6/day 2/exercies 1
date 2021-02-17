@@ -1,0 +1,51 @@
+exercies 1 
+
+
+select *
+from items
+order by Price asc ;
+
+
+SELECT *
+FROM items 
+WHERE price >= 80 
+order by Price desc ; 
+
+SELECT first_name 
+FROM customers
+order by first_name
+FETCH FIRST 3 ROW ONLY;
+
+//4
+SELECT last_name
+FROM customers
+order by last_name desc
+OFFSET 2 ROWS
+FETCH first 5 ROW ONLY;
+
+//2
+-- CREATE TABLE purchases( 
+-- customers_id SERIAL PRIMARY KEY , 
+-- items_id VARCHAR (50) NOT NULL  );	
+
+
+//daily challenge 
+CREATE TABLE FirstTab (
+     id integer, 
+     name VARCHAR(10)
+);
+
+INSERT INTO FirstTab (id ,name)
+VALUES (5,'Pawan'),(6,'Sharlee'),(7,'Krish'),(NULL,'Avtaar');
+
+SELECT * 
+FROM FirstTab
+
+CREATE TABLE SecondTab (
+    id integer 
+);
+INSERT INTO SecondTab VALUES
+(5),
+(NULL);
+
+SELECT * FROM SecondTab
