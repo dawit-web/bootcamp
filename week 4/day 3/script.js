@@ -14,19 +14,19 @@
 
 
 
-function numbers (arr) { 
+// function numbers (arr) { 
 
-    let arr2 = [ ]
-    if (typeof numbers === 'arr2') {
+//     let arr2 = [ ]
+//     if (typeof numbers === 'arr2') {
         
-    }
-    return Number * 2;
-    arr2
-    return ;
-  };
+//     }
+//     return Number * 2;
+//     arr2
+//     return ;
+//   };
 
-  let arr  = numbers ([1, 2, 3])
-  console.log (arr2)
+//   let arr  = numbers ([1, 2, 3])
+//   console.log (arr)
 
 //1. Create a structured html file linked to a js file
 //2. Write a JS function that takes a parameter: myAge
@@ -58,4 +58,8 @@ function numbers (arr) {
 // function (myage) {
 //     console.log("My name is " + name + "my age is "  + age + "I have " + eyeColor + "eyes ")
 // }
+var bill = 10.25 + 3.99 + 7.15 ;
+console.log(bill);
 
+var tip = 0.15 * bill;
+console.log(tip);
