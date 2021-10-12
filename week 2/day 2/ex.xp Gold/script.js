@@ -14,7 +14,7 @@ else if (language.toLowerCase === 'hebrew'){
  else {
      console.log("01110011 01101111")
  }
-
+ //2 op
 // switch(language.toLowerCase()) {
 //   case "english":
 //     console.log("Hello")

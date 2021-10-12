@@ -11,7 +11,6 @@ else {
     console.log('no is the small number')   
 }
 
-
 // Exercise 2: Chihuahua
 
 let newDog = "Chihuahua"
