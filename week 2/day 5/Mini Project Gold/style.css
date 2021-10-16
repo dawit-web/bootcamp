@@ -1,13 +1,8 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-</style>
-
-*
-{
+* {
 
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font - font-weight: normal;
+  font-weight: normal;
 
 }
 
@@ -20,11 +15,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #091920
+  background: #8daab6
 
 }
 
-
+button {
+  width:70px;
+  height:70px;
+}
 .calculator-grid  {  
 
   display: grid;
@@ -36,7 +34,7 @@ body {
 
     
 }
- 
+/*  
  .calcultaor-grid button  {
 
    cursor: pointer; 
@@ -49,6 +47,3 @@ body {
    border: 1px solid rgba(0,0,0,.1) 
 
  }
-
-
-

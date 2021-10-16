@@ -47,22 +47,22 @@
 // // 	number = parseInt(prompt("The number is less than 10 , Enter one bigger"));	
 // //   }
 
-// //Exercise 4 : Attendance
-//  let guestList = {
-// 	randy: "Germany",
-// 	karla: "France",
-// 	wendy: "Japan",
-// 	norman: "England",
-// 	sam: "Argentina",
-//   };
+//Exercise 4 : Attendance
+ let guestList = {
+	randy: "Germany",
+	karla: "France",
+	wendy: "Japan",
+	norman: "England",
+	sam: "Argentina",
+  };
 
-// let student = prompt("hello, what your name ?.").toLowerCase();
+let student = prompt("hello, what your name ?.").toLowerCase();
 
-//  if (student in guestList )  {
-// 	  console.log("hi i'm ${[key]} && and i'm from ${guesList[key]}");
-//  } else{
-// 	 console.log("Hi! I'm a guest.");
-//  }
+ if (student in guestList )  {
+	  console.log(`hi i'm ${[key]} && and i'm from ${guesList[key]}`);
+ } else{
+	 console.log("Hi! I'm a guest.");
+ }
 
 
 

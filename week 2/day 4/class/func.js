@@ -1,9 +1,9 @@
 
-function pet (name, color, breed){
-  console.log(`${name} is a ${color} ${breed}`)
+// function pet (name, color, breed){
+//   console.log(`${name} is a ${color} ${breed}`)
 
-}
- pet("albert","gray","siyam")
+// }
+//  pet("albert","gray","siyam")
 
 
 
@@ -36,22 +36,24 @@ function pet (name, color, breed){
 
 
 
-let prices = [20,12,30];
- function pricesTax (){
-    for (let i = 0; i < prices.length; i++) {
-        prices[i] *= 1.17 ;   
-    }
+// let prices = [20,12,30];
+//  function pricesTax (){
+//     for (let i = 0; i < prices.length; i++) {
+//         prices[i] *= 1.17 ;   
+//     }
         
- }
-  pricesTax();
+//  }
+//   pricesTax();
  
 
- function getSum (currencyConversion) {
-	let sum = 0;
-	for (let i = 0; i<prices.length; i++){
-		sum += prices[i];
-	}
-	// sum of all the meals
-	sum = sum*currencyConversion;
-	return sum;
-}
+//  function getSum (currencyConversion) {
+// 	let sum = 0;
+// 	for (let i = 0; i<prices.length; i++){
+// 		sum += prices[i];
+// 	}
+// 	// sum of all the meals
+// 	sum = sum*currencyConversion;
+// 	return sum;
+// }
+
+
