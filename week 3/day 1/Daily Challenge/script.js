@@ -5,11 +5,12 @@ let colors =['red','blue','green','yellow','purple','white','brown','orange','pi
 
   for (let i = 0; i < planets.length; i++) {
   	let newDiv = document.createElement("div");
-  	let newContent=document.createTextNode(planets[i]);
+  	let newContent = document.createTextNode (planets[i]);
      newDiv.appendChild(newContent);
-     newDiv.classList.add('planet', `${planets[i].toLocaleLowerCase()}`);
-     newDiv.style.backgroundColor =colorList[i];
-     document.body.appendChild(newDiv);
+     newDiv.classList.add('planet', `${planets[i]}.toLocaleLowerCase()`);
+     newDiv.style.background = colors[i];
+     newDiv.appendChild(newContent);
 
    }
 
+// 
