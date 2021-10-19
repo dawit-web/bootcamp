@@ -1,8 +1,9 @@
-//exercies 1
+//Exercise 1 : Move The Box
+
 let button = document.getElementById("btn")
 button.addEventListener("click", myMove)
 
-let postiton;
+let position;
 let timerInterval;
 
 function myMove () {
@@ -19,6 +20,7 @@ function moveRedBox () {
 	} else {
 		position ++
 		animateDiv.style.left = position + "px"
+        animateDiv.style.top = position + "px";
 	}
 }
 
