@@ -32,9 +32,9 @@ const gameInfo = [
    
  });
 
- let hightsorce = [];
- gameInfo.forEach(items => {
-   console.log((user.score > 5 ? "bigeer then 5" : "not biggge" ))
+ let hightSorce = [];
+ gameInfo.forEach(val => {
+   console.log((val.score > 5 ? hightSorce.push(val.username):val ));
  })
 
 
