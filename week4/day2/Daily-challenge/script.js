@@ -3,13 +3,14 @@ let groceries = {
     vegetables: ["tomatoes", "cucumber", "salad"],
     totalPrice : "20$",
     other : {
-        payed : false,
+        payed : true,
         meansOfPayment : ["cash", "creditCard"]
     }
 }
 
 totalPrice = "35$"
 groceries.totalPrice = totalPrice;
+groceries["other.payed"] = false;
 console.log(groceries);
 
 

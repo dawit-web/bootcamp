@@ -34,7 +34,13 @@ const gameInfo = [
 
  let hightSorce = [];
  gameInfo.forEach(val => {
-   console.log((val.score > 5 ? hightSorce.push(val.username):val ));
+   console.log((val.score > 5 ? hightSorce.push(val.username):hightSorce ));
  })
+
+
+ let alluser = 0;
+ gameInfo.forEach(items => alluser += items.score);
+ console.log(alluser)
+
 
 
