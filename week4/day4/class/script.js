@@ -81,15 +81,61 @@
     //     }
     // }
     
- 
+ //Exercise
+// 1. Turn an array of voter objects into a count of how many people voted
+// 2. Do the exercise using reduce only
+// 3. Then do it by chaning map and reduce
+
+ let voters = [
+    {name:'Bob' , age: 30, voted: true},
+    {name:'Jake' , age: 32, voted: true},
+    {name:'Kate' , age: 25, voted: false},
+    {name:'Sam' , age: 20, voted: false},
+    {name:'Bob' , age: 30, voted: true},
+    ];
+
+let pepolevote = voters.reduce ((accumulator , Element ) => {
+        if (Element.voted === true){
+            return ++accumulator
+        }else{
+            return accumulator
+        }
+},0);
+
+console.log(`the pepole voted ${pepolevote}`);
 
 
+// Exercise Destructuring Objects
 
+// function getDetails(name , house , goodstudent) {
+// console.log(name , house , goodstudent)
+// }
+// getDetails({name: 'Harry Potter',house: 'Gryfindor',goodstudent : false})
 
+// Exercise 2
+function getDetails({name, house, friend:{friendName, age}}) {
+	console.log(name, house, friendName, age);
+}
+getDetails({name: 'Hermione Granger', house: 'Gryfindor', friend :  {friendName : 'Harry Potter', age : 20}})
 
+//Exercise3
 
+const elonPerson = {
+    first: 'Elon',
+    last: 'Musk',
+    housesLocation : ["new york", "paris"],
+    twitter: '@elonmusk',
+    company: 'Space X',
+    houses : {
+      amount: 2,
+      value : "5Million"
+    }
+}
 
+function getElonMuskDetails({first, last, housesLocation: [usa, france], houses : {value}}){
+	console.log(first, last, value)
+	console.log(usa, france)
 
-  
+}
 
-  
+getElonMuskDetails(elonPerson)
