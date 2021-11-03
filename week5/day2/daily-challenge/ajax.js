@@ -5,6 +5,7 @@ xhr.open('GET', `https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g=${sea
 xhr.responseType = 'json'; 
 xhr.send();
 console.log(xhr)
+
 xhr.onload = function() {
 	createImages(xhr.response.data);
 }

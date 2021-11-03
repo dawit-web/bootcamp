@@ -1,41 +1,41 @@
-let arrayWords = ['melon','ball', 'avocado']
+// let arrayWords = ['melon','ball', 'avocado']
 
-let makeAllCaps = (arrayWords) => {
-  return new Promise ((resolve, reject ) => {
-    let capsArray = arrayWords.map(word => {
-      if(typeof word === 'string'){
-        return word.toUpperCase()
+// let makeAllCaps = (arrayWords) => {
+//   return new Promise ((resolve, reject ) => {
+//     let capsArray = arrayWords.map(word => {
+//       if(typeof word === 'string'){
+//         return word.toUpperCase()
          
-      } else {
-        reject('Error: Not all the items are strings!')
-      }
-    })
-    resolve(capsArray)
+//       } else {
+//         reject('Error: Not all the items are strings!')
+//       }
+//     })
+//     resolve(capsArray)
 
-  })
-}
+//   })
+// }
 
-let complicatedArray = ['cucumber', 44 ]
+// let complicatedArray = ['cucumber', 44 ]
 
-let sortWords = (array) => {
-   return new Promise((resolve, reject) => {
-     if(array) {
-       resolve(array.sort());
-     } else {
-       reject('Error: Something went wrong with sorting words.')
-     }
-  })
-}
-makeAllCaps(arrayWords)
-  .then(result => {
-    return sortWords(result)
-  })
-  .then((result) => {
-    console.log(result)
-  })
-  .catch(error => {
-    console.log(error)
-  })
+// let sortWords = (array) => {
+//    return new Promise((resolve, reject) => {
+//      if(array) {
+//        resolve(array.sort());
+//      } else {
+//        reject('Error: Something went wrong with sorting words.')
+//      }
+//   })
+// }
+// makeAllCaps(arrayWords)
+//   .then(result => {
+//     return sortWords(result)
+//   })
+//   .then((result) => {
+//     console.log(result)
+//   })
+//   .catch(error => {
+//     console.log(error)
+//   })
 
 
   // 2nd Daily Challenge
@@ -87,25 +87,55 @@ makeAllCaps(arrayWords)
     "(": "-.--.",
     ")": "-.--.-"
   }`
+  // toJs(json)
+  // .then(toMorse)
+  // .then(joinWords)
+  // .catch(err=> console.log(err))
 
-
- let toJs = (json) => 
+ let toJs = (json) => { 
     new Promise ((resolve, reject) => {
-      if(!json) reject(error,"obj is empty"))
-     
+      if(!json) { 
+        reject(error,"obj is empty")
+      }
       resolve(JSON.parse(json));
-    } 
-  })
+     
+    })
+  };
   
-// let toMors = (morseJS) =>
-// new Promise ((resolve, reject) => {
-//   let words = prompt ("giv a word or a sentence")
-//   .toLowerCase() 
-// console.log(toMors);
-//   if (!char = in morseJS)) reject(error," no")) {
-    
-//     resolve(toMors.map => morseJS[char]));
 
-//    }
-//  });
-// };
+let toMorse = (morseJS) => { 
+  let word = prompt("giv a word or a sentence").toLowerCase()
+new Promise ((resolve, reject) => {
+  // let word = prompt("giv a word or a sentence").toLowerCase() 
+   let translation = []
+  if (word in morseJS) {
+    reject(error," no morse ")
+    translation.push(morseJS(word))
+  }  
+    resolve(translation) 
+    console.log(translation);
+    console.log(toMorse);
+});
+
+}
+
+function joinWords (word) {
+  let letter = ``
+  for (let i = 0; i < word.length; i++) {
+      letter += word[i] + `\n`
+  }
+  console.log(letter)
+}
+console.log(morse)
+toJs(morse)
+    .then((x) => {
+      console.log(x) 
+      toMorse(x)})    
+    .then((x) => joinWords(x))
+    .then((x) => console.log(x))
+    .catch((err) => console.log(err))
+
+//  toJs(morse)
+// .then()(toMorse)
+// .then(joinWords)
+// .catch(err=> console.log(err)

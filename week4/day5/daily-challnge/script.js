@@ -8,8 +8,8 @@ let anagrmas = (strA, strB) => {
 }
 
  
-    function sortString(string) {  /*function sorts the strings*/
-        return string.split('').sort().join('');
+    function sortString(anagrmas) {  /*function sorts the strings*/
+        return anagrmas.split('').sort().join('');
     };
 
 console.log(anagrmas("Astronooomer", "Mmmoon starer")); //false
