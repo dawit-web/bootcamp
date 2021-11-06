@@ -1,23 +1,25 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>star wars</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<style></style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <i class="fas fa-circle-notch fa-spin"></i>
 
-</div>
-  <h2 id="name"></h2>
-  <p id="height"></p>
-  <p id="gender"></p>
-  <p id="byear"></p>
-  <p id="hworld"></p>
-</div>
+      <div class="item">
+        <loading class="sr-noly">Loading...</loading>
+        <h2 id="name"></h2>
+        <p id="height"></p>
+        <p id="gender"></p>
+        <p id="birth_year"></p>
+        <p id="homeworld"></p>
+      </div>
+      <button id="btnsearch" type="button">Find someone</button>
+    </div>
 
-<button id="btnsearch">find someone</button>
-</div>
-<script src="ajax.js"></script>
-</body>
+    <script src="ajax.js"></script>
+  </body>
 </html>

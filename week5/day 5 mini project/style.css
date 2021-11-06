@@ -1,22 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
+/* * {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+} */
+body {
+  background-image: url("https://silistranews.net/wp-content/uploads/2020/05/star-wars.jpg");
+  background-size: cover;
+  background-position: top;
+  color: #ffffff;
 
- body{
-   background-image:url("https://cdn.statically.io/img/i.pinimg.com/originals/4b/48/b3/4b48b38a275415e33f4b52c74307ce4d.jpg");
-   color:#ffffff;
-
+  flex-direction: column;
 }
 
-.Star  {
-  display: flex;
+.container {
+  align-items: center;
   flex-wrap: wrap;
+  padding: 15px;
+  margin: 50px auto;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 2px rgb(241, 241, 41) solid;
+  border-radius: 20px;
+  width: 100vh;
+  height: 50vh;
+}
+.item {
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-      
-.button{
-           display: block;
-           margin: 0 auto;
-           font-size: 20px;
-           border-radius: 6px;
-           
+.button {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  border-radius: 6px;
+  position: center;
+}
 
-       }
+/* 
+
+background-image: url("https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg");
+‏
+background-image: url("http://imagizer.imageshack.com/a/img922/3783/oyvsRd.png");‏ */
