@@ -1,0 +1,46 @@
+--  CREATE TABLE items(
+--   item_id SERIAL PRIMARY KEY,
+--     prudoct VARCHAR (100) NOT NULL,
+--     price integer NOT NULL
+--     )
+
+-- CREATE TABLE customers(
+-- customers_id SERIAL PRIMARY KEY,
+-- first_name VARCHAR (50) NOT NULL,
+-- last_name VARCHAR (100) NOT NULL
+-- 	)
+
+-- INSERT INTO customers (first_name, last_name)
+--  VALUES('Greg','Jones'),
+--       ('Sandra','Jones'),
+--       ('Scott','Scott'),
+--  	 ('Trevor','Green'),
+-- 	 ('Melanie','Johnson')
+	 
+-- 	 select * from customers;
+
+-- INSERT INTO items (prudoct, price)
+--  VALUES('Small Desk', 100 ),
+--  ('Large Desk', 300 ),('Fan', 80 )
+	 
+-- select *
+-- from items
+-- where price > 80 ;
+
+-- select *
+-- from items
+-- where price <= 300;
+
+-- select *
+-- from customers
+-- where last_name = 'Smith';
+-- select *
+-- from customers
+-- where last_name = 'Jones';
+
+-- select *
+-- from customers
+-- where first_name != 'Sctt';
+
+
+
