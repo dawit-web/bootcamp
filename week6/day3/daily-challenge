@@ -1,0 +1,18 @@
+
+CREATE TABLE customers (
+  customer_id SERIAL PRIMARY KEY
+  first_name VARCHAR(45) NOT NULL,
+  birth_day date NOT NULL,
+ 
+);
+
+/*
+ one to one: a customers has one profile
+*/
+CREATE TABLEC profile (
+  pk_customer_id INTEGER NOT NULL,
+  profile TEXT NOT NULL,
+  PRIMARY KEY (pk_customer_id),
+  CONSTRAINT fk_customer_id FOREIGN KEY (pk_customer_id) REFERENCES customers (customer_id)
+);
+
