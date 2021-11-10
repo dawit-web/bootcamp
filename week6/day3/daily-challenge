@@ -1,18 +1,29 @@
 
-CREATE TABLE customers (
-  customer_id SERIAL PRIMARY KEY
-  first_name VARCHAR(45) NOT NULL,
-  birth_day date NOT NULL,
- 
-);
-
+-- CREATE TABLE customers (
+--   customer_id SERIAL PRIMARY KEY,
+--   name VARCHAR(45) NOT NULL 
+-- );
 /*
  one to one: a customers has one profile
-*/
-CREATE TABLEC profile (
-  pk_customer_id INTEGER NOT NULL,
-  profile TEXT NOT NULL,
-  PRIMARY KEY (pk_customer_id),
-  CONSTRAINT fk_customer_id FOREIGN KEY (pk_customer_id) REFERENCES customers (customer_id)
-);
+-- */
+-- CREATE TABLE profile (
+--   pk_card_id INTEGER PRIMARY KEY ,
+--   address VARCHAR(45) ,
+-- 	owner_id INTEGER
+--   REFERENCES customers (customer_id)
+	
+-- );
 
+-- insert into customers(name)
+-- values ('avi') ,('tom')
+
+-- insert into profile (pk_card_id , address)
+-- values (12345 ,'haifa')
+
+-- select *
+-- from customers 
+-- INNER JOIN profile
+-- ON customer_id = pk_card_id;
+
+select *
+from customers INNER JOIN profile ON customer_id = pk_card_id;
