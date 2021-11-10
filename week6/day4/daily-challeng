@@ -1,0 +1,30 @@
+-- --1
+-- CREATE TABLE orders
+-- (
+--    order_id   SERIAL PRIMARY KEY ,
+--    item_id SMALLINT ,
+--    name   VARCHAR (30) NOT NULL,
+--    address   VARCHAR(30) NOT NULL,
+--    FOREIGN KEY (item_id) REFERENCES items(item_id)
+-- )
+
+-- CREATE TABLE items
+-- (
+--    item_id   SERIAL PRIMARY KEY ,
+--     name     VARCHAR(30), 
+-- 	price    integer  
+-- );
+
+-- INSERT INTO items (name,price)
+-- VALUES ('pizza','9'), ('baget','13'), ('bag','40');
+
+INSERT INTO orders (name , address) 
+VALUES ('moshe','tel-aviv'), ('tom','ben tzvi'), ('dawit','megadim');
+--3
+SELECT sum (price) 
+FROM items 
+INNER JOIN orders ON order_id = item_id ;
+
+
+
+
