@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>to do list</h1>
+
+    <form id="form" onsubmit="return false">
+      <label>Item Name: <input name="name" type="text" id="name" /></label>
+      <br />
+      <label>Item Description: <input name="Description" type="text" /></label>
+      <br />
+      <label
+        >Start date:
+        <input name="Start date" type="datetime-local" id="datetime"
+      /></label>
+      <br />
+      <label
+        >End date: <input name="End date" t type="datetime-local" id="datetime"
+      /></label>
+      <br />
+      <label
+        >Status:<input name="status" type="check" value="active/done"
+      /></label>
+      <br />
+      <button name="additem" id="additem" type="button" onClick="addItem()">
+        Add
+      </button>
+      <button
+        name="removeitem"
+        id="removeitem"
+        type="button"
+        onClick="removeItem()"
+      >
+        Remove
+      </button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
