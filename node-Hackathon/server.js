@@ -21,8 +21,8 @@ app.post('/Login', (req,res) => {
 
     try{
        
-        const text = fs.readFileSync('./txt');
-        users  = JSON.stringify(text)
+        const text = fs.readFile('./txt');
+        users  = JSON.parse(text.toString())
         
       }
       catch(err) {
@@ -31,6 +31,7 @@ app.post('/Login', (req,res) => {
       }
       
       finally{
+        console.log(users)
           users.push(req.body)
       }  
 
@@ -39,35 +40,14 @@ app.post('/Login', (req,res) => {
     if(err) {
       console.log(err);
     }   
-    res.send({ message: 'OK', users });
+    res.json(users);
    
   
    });
   
-})
+ })
 
 
   
 
-
-
-
-// app.post('/find', (req,res)=> {
-//     console.log(req.body);
-       
-//     const {product,quantity} = req.body;
-//     db('products')
-//     .insert([{ name: product , quantity: quantity }])
-//     .returning('*')
-//     .then(data => {
-//       console.log('data1',data)
-//       res.send({ message: 'OK' });
-      
-//     })
-//       .catch(err => {
-//         console.log(err)
-//         res.send({ message: err });
-  
-//       })
-//     });
 
