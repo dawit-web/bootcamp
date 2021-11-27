@@ -32,7 +32,7 @@ class App extends React.Component{
           <div>
              <button onClick={this.shootRegular}>Keep Shooting!</button>
              <button onClick={this.shootRegularWithParameter.bind(this, 'pass!')}>Shooting!</button>
-             <button onClick={() => this.shootWithArgument('Goal')}>Goal</button>
+             <button onClick={ this.shootWithArgument('Goal')}>Goal</button>
              <button onClick={this.shootTwo}>obj</button>
           </div>
         )
